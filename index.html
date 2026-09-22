@@ -125,22 +125,43 @@
   Safety Data Sheet Library
 </footer>
 
+
+<script src="chemicals.js"></script>
+
 <script>
-function searchSDS() {
-  const input = document.getElementById("search");
-  const filter = input.value.toLowerCase();
-  const cards = document.getElementsByClassName("sds-card");
+const sdsList = document.getElementById("sdsList");
 
-  for (let i = 0; i < cards.length; i++) {
-    const text = cards[i].innerText.toLowerCase();
+function displayChemicals(list) {
+  sdsList.innerHTML = "";
 
-    if (text.includes(filter)) {
-      cards[i].style.display = "";
-    } else {
-      cards[i].style.display = "none";
-    }
-  }
+  list.forEach(chemical => {
+    const card = document.createElement("div");
+    card.className = "sds-card";
+
+    card.innerHTML = `
+      <h2>${chemical.name}</h2>
+      <p><strong>Manufacturer:</strong> ${chemical.manufacturer}</p>
+      <p><strong>Category:</strong> ${chemical.category}</p>
+      <a class="view-button" href="${encodeURI(chemical.file)}" target="_blank">View SDS</a>
+    `;
+
+    sdsList.appendChild(card);
+  });
 }
+
+function searchSDS() {
+  const filter = document.getElementById("search").value.toLowerCase();
+
+  const filtered = chemicals.filter(chemical =>
+    chemical.name.toLowerCase().includes(filter) ||
+    chemical.manufacturer.toLowerCase().includes(filter) ||
+    chemical.category.toLowerCase().includes(filter)
+  );
+
+  displayChemicals(filtered);
+}
+
+displayChemicals(chemicals);
 </script>
 <script src="chemicals.js"></script>
 
