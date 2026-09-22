@@ -119,4 +119,41 @@ const chemicals = [
     category: "Cleaning",
     file: "Dawn Dish Soap SDS.pdf"
   }
+    {
+    name: "Dial",
+    manufacturer: "Unknown",
+    category: "Hand Soap / Cleaning",
+    file: "Dial.pdf"
+  },
+  {
+    name: "Diesel Fuel",
+    manufacturer: "Unknown",
+    category: "Fuel",
+    file: "Diesel Fuel.pdf"
+  },
+  {
+    name: "Electrode Storage Solution",
+    manufacturer: "Unknown",
+    category: "Laboratory / Testing",
+    file: "Electrode Storage Solution.pdf"
+  },
+  {
+    name: "Ferroin Indicator Solution",
+    manufacturer: "Unknown",
+    category: "Laboratory / Testing",
+    file: "Ferroin Indicator Solution.pdf"
+  },
+  {
+    name: "General Purpose Spotter",
+    manufacturer: "Unknown",
+    category: "Cleaning / Stain Remover",
+    file: "General Purpose Spotter.pdf"
+  },
+  {
+    name: "Geocel 4600 Structural Adhesive",
+    manufacturer: "Geocel",
+    category: "Adhesive / Sealant",
+    file: "Geocel 4600 Structural Adhesive.pdf"
+  }
+
 ];
