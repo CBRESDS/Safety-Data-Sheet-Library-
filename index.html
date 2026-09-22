@@ -101,7 +101,7 @@
     onkeyup="searchSDS()"
   >
 
-  <div id="sdsList">
+  <div id="sdsList"></div>
 
    <div class="sds-card">
   <h2>RMR-86</h2>
@@ -141,6 +141,43 @@ function searchSDS() {
     }
   }
 }
+</script>
+<script src="chemicals.js"></script>
+
+<script>
+const sdsList = document.getElementById("sdsList");
+
+function displayChemicals(list) {
+  sdsList.innerHTML = "";
+
+  list.forEach(chemical => {
+    const card = document.createElement("div");
+    card.className = "sds-card";
+
+    card.innerHTML = `
+      <h2>${chemical.name}</h2>
+      <p><strong>Manufacturer:</strong> ${chemical.manufacturer}</p>
+      <p><strong>Category:</strong> ${chemical.category}</p>
+      <a class="view-button" href="${encodeURI(chemical.file)}" target="_blank">View SDS</a>
+    `;
+
+    sdsList.appendChild(card);
+  });
+}
+
+function searchSDS() {
+  const filter = document.getElementById("search").value.toLowerCase();
+
+  const filtered = chemicals.filter(chemical =>
+    chemical.name.toLowerCase().includes(filter) ||
+    chemical.manufacturer.toLowerCase().includes(filter) ||
+    chemical.category.toLowerCase().includes(filter)
+  );
+
+  displayChemicals(filtered);
+}
+
+displayChemicals(chemicals);
 </script>
 
 </body>
