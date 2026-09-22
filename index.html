@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Safety Data Sheet Library</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,24 +12,29 @@
       background: #f4f6f8;
       color: #222;
     }
+
     header {
       background: #1f4e79;
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 30px;
     }
+
     header p {
       margin-top: 8px;
     }
+
     .container {
       max-width: 900px;
       margin: 30px auto;
       padding: 0 20px;
     }
+
     #search {
       width: 100%;
       padding: 14px;
@@ -38,6 +44,7 @@
       box-sizing: border-box;
       margin-bottom: 25px;
     }
+
     .sds-card {
       background: white;
       padding: 20px;
@@ -45,13 +52,16 @@
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
+
     .sds-card h2 {
       margin-top: 0;
       margin-bottom: 8px;
     }
+
     .sds-card p {
       margin: 5px 0;
     }
+
     .view-button {
       display: inline-block;
       margin-top: 12px;
@@ -59,3 +69,79 @@
       background: #1f4e79;
       color: white;
       text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .view-button:hover {
+      background: #163a5c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Safety Data Sheet Library</h1>
+  <p>Search for a chemical below to view its Safety Data Sheet.</p>
+</header>
+
+<div class="container">
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Search chemical or manufacturer..."
+    onkeyup="searchSDS()"
+  >
+
+  <div id="sdsList">
+
+    <div class="sds-card">
+      <h2>Example Chemical</h2>
+      <p><strong>Manufacturer:</strong> Example Manufacturer</p>
+      <p><strong>Category:</strong> Cleaning</p>
+      <a class="view-button" href="#" target="_blank">View SDS</a>
+    </div>
+
+    <div class="sds-card">
+      <h2>Example Lubricant</h2>
+      <p><strong>Manufacturer:</strong> Example Company</p>
+      <p><strong>Category:</strong> Mechanical</p>
+      <a class="view-button" href="#" target="_blank">View SDS</a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  Safety Data Sheet Library
+</footer>
+
+<script>
+function searchSDS() {
+  const input = document.getElementById("search");
+  const filter = input.value.toLowerCase();
+  const cards = document.getElementsByClassName("sds-card");
+
+  for (let i = 0; i < cards.length; i++) {
+    const text = cards[i].innerText.toLowerCase();
+
+    if (text.includes(filter)) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
