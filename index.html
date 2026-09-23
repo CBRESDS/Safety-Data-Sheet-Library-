@@ -123,12 +123,32 @@ function displayChemicals(list) {
     const card = document.createElement("div");
     card.className = "sds-card";
 
-    card.innerHTML = `
-      <h2>${chemical.name}</h2>
-      <p><strong>Manufacturer:</strong> ${chemical.manufacturer}</p>
-      <p><strong>Category:</strong> ${chemical.category}</p>
-      <a class="view-button" href="${encodeURI(chemical.file)}" target="_blank">View SDS</a>
-    `;
+    let buttons = "";
+
+if (chemical.files) {
+  buttons = chemical.files.map(item => `
+    <a class="view-button"
+       href="${encodeURI(item.file)}"
+       target="_blank">
+       ${item.label}
+    </a>
+  `).join(" ");
+} else {
+  buttons = `
+    <a class="view-button"
+       href="${encodeURI(chemical.file)}"
+       target="_blank">
+       View SDS
+    </a>
+  `;
+}
+
+card.innerHTML = `
+  <h2>${chemical.name}</h2>
+  <p><strong>Manufacturer:</strong> ${chemical.manufacturer}</p>
+  <p><strong>Category:</strong> ${chemical.category}</p>
+  ${buttons}
+`;
 
     sdsList.appendChild(card);
   });
