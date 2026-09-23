@@ -546,7 +546,6 @@ const chemicals = [
     }
   ]
 },
-{
-  name:
+
 
 ];
