@@ -449,4 +449,104 @@ const chemicals = [
     category: "Stainless Steel Cleaner / Protectant",
     file: "WOW! Stainless Steel Cleaner and Protectant.pdf"
   }
+  ,
+{
+  name: "Magic Eraser",
+  manufacturer: "Mr. Clean / Procter & Gamble",
+  category: "Cleaning",
+  file: "Magic Eraser ENG.pdf"
+},
+{
+  name: "Neutral Floor Cleaner",
+  manufacturer: "SC Johnson Professional",
+  category: "Floor Cleaner",
+  files: [
+    {
+      label: "English SDS",
+      file: "Neutral Floor Cleaner ENG.pdf"
+    },
+    {
+      label: "Spanish SDS",
+      file: "Neutral Floor Cleaner SPA.pdf"
+    }
+  ]
+},
+{
+  name: "SCJ Carpet Spotter",
+  manufacturer: "SC Johnson Professional",
+  category: "Carpet / Spot Cleaner",
+  files: [
+    {
+      label: "English SDS",
+      file: "SCJ Carpet Spotter ENG.pdf"
+    },
+    {
+      label: "Spanish SDS",
+      file: "SCJ Carpet Spotter SPA.pdf"
+    }
+  ]
+},
+{
+  name: "SCJ Fabric & Air Odor Control",
+  manufacturer: "SC Johnson Professional",
+  category: "Odor Control",
+  files: [
+    {
+      label: "English SDS",
+      file: "SCJ Fabric & Air Odor Control ENG.pdf"
+    },
+    {
+      label: "Spanish SDS",
+      file: "SCJ Fabric & Air Odor Control SPA.pdf"
+    }
+  ]
+},
+{
+  name: "SCJ Floor Finish Plus Sealer",
+  manufacturer: "SC Johnson Professional",
+  category: "Floor Finish / Sealer",
+  files: [
+    {
+      label: "English SDS",
+      file: "SCJ Floor Finish Plus Sealer ENG.pdf"
+    },
+    {
+      label: "Spanish SDS",
+      file: "SCJ Floor Finish Plus Sealer SPA.pdf"
+    }
+  ]
+},
+{
+  name: "SCJ Heavy Duty Floor Cleaner Squeeze & Pour",
+  manufacturer: "SC Johnson Professional",
+  category: "Floor Cleaner",
+  files: [
+    {
+      label: "English SDS",
+      file: "SCJ Heavy Duty Floor Cleaner Squeeze & Pour ENG.pdf"
+    },
+    {
+      label: "Spanish SDS",
+      file: "SCJ Heavy Duty Floor Cleaner Squeeze & Pour SPA.pdf"
+    }
+  ]
+},
+{
+  name: "SCJ Hyper Concentrate Floor Stripper",
+  manufacturer: "SC Johnson Professional",
+  category: "Floor Stripper",
+  files: [
+    {
+      label: "English SDS",
+      file: "SCJ Hyper Concentrate Floor Stripper ENG.pdf"
+    },
+    {
+      label: "Spanish SDS",
+      file: "SCJ Hyper Concentrate Floor Stripper SPA.pdf"
+    }
+  ]
+},
+{
+  name:
+
 ];
