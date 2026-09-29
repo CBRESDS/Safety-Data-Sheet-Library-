@@ -547,5 +547,12 @@ const chemicals = [
   ]
 },
 
+{
+  name: "FAAC Hydraulic Oil",
+  manufacturer: "FAAC",
+  category: "Hydraulic Oil / Lubricant",
+  file: "FAAC-HydraulicOil-SafetySheets.pdf"
+}
 
+  
 ];
