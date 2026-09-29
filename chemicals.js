@@ -19,25 +19,25 @@ const chemicals = [
   },
   {
     name: "Accel Five TB Wipes",
-    manufacturer: "Unknown",
+    manufacturer: "Diversey",
     category: "Disinfectant Wipes",
     file: "Accel® Five TB Wipes.pdf"
   },
   {
     name: "Acid Toilet Bowl Cleaner",
-    manufacturer: "Unknown",
+    manufacturer: "SC Johnson",
     category: "Restroom Cleaner",
     file: "Acid Toilet Bowl Cleaner (EPA Reg No. 8155-6-89900).pdf"
   },
   {
     name: "AseptiCare TB+II",
-    manufacturer: "Unknown",
+    manufacturer: "Ecolab",
     category: "Disinfectant",
     file: "ASEPTICARE TB+II.pdf"
   },
   {
     name: "Birex Quat Wipes",
-    manufacturer: "Unknown",
+    manufacturer: "Biotrol",
     category: "Disinfectant Wipes",
     file: "Birex® Quat Wipes.pdf"
   },
@@ -61,7 +61,7 @@ const chemicals = [
   },
   {
     name: "Citro Shield Furniture Polish",
-    manufacturer: "Unknown",
+    manufacturer: "Spartan",
     category: "Furniture Care",
     file: "CITRO SHIELD FURNITURE POLISH.pdf"
   },
@@ -91,19 +91,19 @@ const chemicals = [
   },
   {
     name: "Common Salt without Additives",
-    manufacturer: "Unknown",
+    manufacturer: "Morton",
     category: "Water Treatment / Testing",
     file: "Common Salt without Additives.pdf"
   },
   {
     name: "Continuum AT3246",
-    manufacturer: "Unknown",
+    manufacturer: "Veolia",
     category: "Water Treatment",
     file: "CONTINUUM AT3246.pdf"
   },
   {
     name: "CorrShield NT4207",
-    manufacturer: "Unknown",
+    manufacturer: "Veolia",
     category: "Water Treatment",
     file: "CORRSHIELD NT4207.pdf"
   },
@@ -127,7 +127,7 @@ const chemicals = [
   },
   {
     name: "Diesel Fuel",
-    manufacturer: "Unknown",
+    manufacturer: "TotalEnergies",
     category: "Fuel",
     file: "Diesel Fuel.pdf"
   },
@@ -151,19 +151,19 @@ const chemicals = [
   },
   {
     name: "Electrode Storage Solution",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Testing / Laboratory",
     file: "Electrode Storage Solution.pdf"
   },
   {
     name: "Ferroin Indicator Solution",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Testing / Laboratory",
     file: "Ferroin Indicator Solution.pdf"
   },
   {
     name: "General Purpose Spotter",
-    manufacturer: "Unknown",
+    manufacturer: "Diversey",
     category: "Spot / Stain Cleaner",
     file: "General Purpose Spotter.pdf"
   },
@@ -193,67 +193,67 @@ const chemicals = [
   },
   {
     name: "Gum Remover",
-    manufacturer: "Unknown",
+    manufacturer: "Diversey",
     category: "Specialty Cleaner",
     file: "Gum Remover.pdf"
   },
   {
     name: "Hardness Buffer Solution",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Water Testing",
     file: "Hardness Buffer Solution.pdf"
   },
   {
     name: "Hardness Indicator Powder",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Water Testing",
     file: "Hardness Indicator Powder.pdf"
   },
   {
     name: "Hardness Titrant 1DR",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Water Testing",
     file: "Hardness Titrant 1DR.pdf"
   },
   {
     name: "Hardness Titrant",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Water Testing",
     file: "Hardness Titrant.pdf"
   },
   {
     name: "Hydrogen Peroxide",
-    manufacturer: "Unknown",
+    manufacturer: "Clorox",
     category: "Chemical / Disinfectant",
     file: "Hydrogen Peroxide.pdf"
   },
   {
     name: "Isopropyl Rubbing Alcohol USP 70%",
-    manufacturer: "Unknown",
+    manufacturer: "Hydrox",
     category: "Alcohol / Disinfectant",
     file: "Isopropyl Rubbing Alcohol USP 70%.pdf"
   },
   {
     name: "Maxim Super San Plus Sanitizing Solution",
-    manufacturer: "Unknown",
+    manufacturer: "Midlab",
     category: "Sanitizer",
     file: "Maxim Super San Plus Sanitizing Solution.pdf"
   },
   {
     name: "NABC Non-Acid Disinfectant Bathroom Cleaner",
-    manufacturer: "Unknown",
+    manufacturer: "Spartan",
     category: "Restroom Cleaner / Disinfectant",
     file: "NABC NON-ACID DISINFECTANT BATHROOM CLEANER.pdf"
   },
   {
     name: "Nitrite Titrant",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Water Testing",
     file: "Nitrite Titrant.pdf"
   },
   {
     name: "Non-acid Toilet Bowl & Washroom Cleaner",
-    manufacturer: "Unknown",
+    manufacturer: "Nyco",
     category: "Restroom Cleaner",
     file: "Non-acid Toilet Bowl & Washroom Cleaner.pdf"
   },
@@ -271,7 +271,7 @@ const chemicals = [
   },
   {
     name: "OxyCide Daily Disinfectant Cleaner",
-    manufacturer: "Unknown",
+    manufacturer: "Ecolab",
     category: "Disinfectant / Cleaner",
     file: "OXYCIDE DAILY DISINFECTANT CLEANER.pdf"
   },
@@ -283,25 +283,25 @@ const chemicals = [
   },
   {
     name: "Phosphoric Acid 85%",
-    manufacturer: "Unknown",
+    manufacturer: "DyStar",
     category: "Acid / Chemical",
     file: "Phosphoric Acid 85%.pdf"
   },
   {
     name: "Premier 1.3",
-    manufacturer: "Unknown",
+    manufacturer: "Premier",
     category: "Other",
     file: "Premier 1.3.pdf"
   },
   {
     name: "Propane",
-    manufacturer: "Unknown",
+    manufacturer: "Airgas",
     category: "Fuel / Gas",
     file: "Propane.pdf"
   },
   {
     name: "Pure Bright Germicidal Ultra Bleach",
-    manufacturer: "Unknown",
+    manufacturer: "Kik International",
     category: "Bleach / Disinfectant",
     file: "Pure Bright Germicidal Ultra Bleach.pdf"
   },
@@ -313,7 +313,7 @@ const chemicals = [
   },
   {
     name: "Rust Aid Gel Trigger",
-    manufacturer: "Unknown",
+    manufacturer: "W. M. Barr",
     category: "Rust Remover",
     file: "Rust Aid Gel Trigger.pdf"
   },
@@ -379,19 +379,19 @@ const chemicals = [
   },
   {
     name: "Spectrus NX1106",
-    manufacturer: "Unknown",
+    manufacturer: "Veolia",
     category: "Water Treatment",
     file: "Spectrus NX1106.pdf"
   },
   {
     name: "SSS VSD Coolant",
-    manufacturer: "Unknown",
+    manufacturer: "AquaPhoenix",
     category: "Coolant",
     file: "SSS VSD Coolant.pdf"
   },
   {
     name: "Stainless Steel Cleaner and Polish",
-    manufacturer: "Unknown",
+    manufacturer: "Weiman",
     category: "Stainless Steel Cleaner / Polish",
     file: "Stainless Steel Cleaner and Polish.pdf"
   },
@@ -403,25 +403,25 @@ const chemicals = [
   },
   {
     name: "Superior High Shine Stainless Steel Cleaner & Polish",
-    manufacturer: "Unknown",
+    manufacturer: "Spartan",
     category: "Stainless Steel Cleaner / Polish",
     file: "SUPERIOR HIGH SHINE STAINLESS STEEL CLEANER & POLISH.pdf"
   },
   {
     name: "Tetrafluoroethane R-134a",
-    manufacturer: "Unknown",
+    manufacturer: "Linde",
     category: "Refrigerant",
     file: "Tetrafluoroethane R-134a.pdf"
   },
   {
     name: "TruFill Hyper-Concentrated Floor Cleaner End Use Dilution",
-    manufacturer: "Unknown",
+    manufacturer: "SC Johnson",
     category: "Floor Cleaner",
     file: "TruFill Hyper-Concentrated Floor Cleaner End Use Dilution.pdf"
   },
   {
     name: "Viraguard Disinfectant Towelettes",
-    manufacturer: "Unknown",
+    manufacturer: "Veridien",
     category: "Disinfectant Wipes",
     file: "Viraguard Disinfectant Towelettes.pdf"
   },
@@ -445,7 +445,7 @@ const chemicals = [
   },
   {
     name: "WOW! Stainless Steel Cleaner and Protectant",
-    manufacturer: "Unknown",
+    manufacturer: "EZ Finishes",
     category: "Stainless Steel Cleaner / Protectant",
     file: "WOW! Stainless Steel Cleaner and Protectant.pdf"
   }
